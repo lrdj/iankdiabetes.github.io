@@ -5,6 +5,13 @@ description: Sample code for test.
 ---
 <!-- sizes="(min-width: 1em) 50vw, (min-width: 40em) 25vw, 100vw" -->
 
+{% for post in site.posts %}
+  <div class='listing'>
+    <a class='post-title' href='{{ post.url }}'>{{ post.title }}</a>
+  </div>
+{% endfor %}
+
+
 <main class="portfolio-index">
   <div class="row row-1">
     <a href="/portfolio/fluxx" class="half">
@@ -21,28 +28,26 @@ description: Sample code for test.
         srcset="/assets/i/Budleigh_Christmas_Swim.jpg 250w,
                 /assets/i/Budleigh_Christmas_Swim.jpg 500w,
                 /assets/i/Budleigh_Christmas_Swim.jpg 750w"
-        alt="Billy, Jed and Dug on Budleigh beach Christmas ">
+        alt="Billy, Jed and Dug on Budleigh beach Christmas 2008">
     </a>
   </div>
-
-  <p>This is a new row</p>
-
+  
   <div class="row row-2">
     <a href="/portfolio/type-film" class="quarter">
       <img
         sizes="(min-width: 1em) 50vw, (min-width: 40em) 25vw, 100vw"
-        srcset="/assets/type-film/cover-extrasmall.gif 250w,
-                /assets/type-film/cover-small.gif 500w,
-                /assets/type-film/cover-medium.gif 720w"
-        alt="Type and Film">
+        srcset="/assets/i/yougottabefuckingkidding.png 250w,
+                /assets/i/yougottabefuckingkidding.png 500w,
+                /assets/i/yougottabefuckingkidding.png 720w"
+        alt="Welcome to Yahoo, have a nice day">
     </a>
     <a href="/portfolio/stenbergs" class="half">
       <img
         sizes="(min-width: 1em) 50vw, 100vw"
-        srcset="/assets/stenbergs/cover-small.png 500w,
-                /assets/stenbergs/cover-medium.png 750w,
-                /assets/stenbergs/cover-large.png 1000w"
-        alt="The Men with the Movie Posters">
+        srcset="/assets/i/Clem_Forty_Hall.jpg 500w,
+                /assets/i/Clem_Forty_Hall.jpg 750w,
+                /assets/i/Clem_Forty_Hall.jpg 1000w"
+        alt="Clem at Forty Hall">
     </a>
   </div>
 
