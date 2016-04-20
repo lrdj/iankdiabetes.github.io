@@ -1,3 +1,11 @@
+Typekit calls from header
+
+```
+  <script src="https://use.typekit.net/bbp4pzm.js"></script>
+  <script>try{Typekit.load({ async: true });}catch(e){}</script>
+  <script src="https://use.fonticons.com/97a498a0.js"></script>
+```
+
 # Jacob Berchem - Portfolio
 
 I'm a visual and user exeperience designer from Wisconsin. This is my personal design portfolio.
