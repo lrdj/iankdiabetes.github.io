@@ -7,6 +7,14 @@ layout: default
 
 <h1>{{ site.author }}'s Blog</h1>
 
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
+
 <section class="posts">
 {% for post in site.posts %}
   <li><date>{{ post.date | date: "%B %-d, %Y"}}<a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}
