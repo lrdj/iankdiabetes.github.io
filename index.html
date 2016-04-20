@@ -5,11 +5,46 @@ description: Sample code for test.
 ---
 <!-- sizes="(min-width: 1em) 50vw, (min-width: 40em) 25vw, 100vw" -->
 
+<main class="portfolio-index">
+
+{% for post in site.posts %}
+
+  <div class="row row-{{loop.index}}">
+
+    <a href="{{ post.url }}" class="half">
+      <img
+        sizes="(min-width: 1em) 50vw, 100vw"
+        srcset="{{ site.url }}/assets/i/{{ post.thumbnail }} 500w,
+                {{ site.url }}/assets/i/{{ post.thumbnail }} 750w,
+                {{ site.url }}/assets/i/{{ post.thumbnail }} 1000w"
+        alt="{{ post.title }}">
+    </a>
+
+    <a href="{{ post.url }}" class="quarter odd-shape">
+      <img
+        sizes="(min-width: 1em) 50vw, 100vw"
+        srcset="{{ site.url }}/assets/i/{{ post.thumbnail }} 500w,
+                {{ site.url }}/assets/i/{{ post.thumbnail }} 750w,
+                {{ site.url }}/assets/i/{{ post.thumbnail }} 1000w"
+        alt="{{ post.title }}">
+    </a>
+
+  </div>
+
+{% endfor %}
+
+</main>
+
+
+<hr>
+
 {% for post in site.posts %}
   <div class='listing'>
     <a class='post-title' href='{{ post.url }}'>{{ post.title }}</a>
   </div>
 {% endfor %}
+
+<hr>
 
 
 <main class="portfolio-index">
