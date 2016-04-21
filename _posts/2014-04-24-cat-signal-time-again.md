@@ -3,7 +3,9 @@ layout: post
 title: "Cat signal time again"
 date: 2014-04-24 18:56:28
 description: "President Obama and other leaders are meeting in Asia right now to finalize the Trans-Pacific Partnership - a deal that threatens to censor your use of the Internet, kill jobs, undermine environmental protections and remove your democratic rights... Sound bad? You can add your name here: stopthesecrecy.net..."
-thumbnail: 
+
+thumbnail: badboy.png
+
 alt: ""
 
 tags: EFF

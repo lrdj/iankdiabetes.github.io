@@ -6,35 +6,48 @@ description: Sample code for test.
 <!-- sizes="(min-width: 1em) 50vw, (min-width: 40em) 25vw, 100vw" -->
 
 <main class="portfolio-index">
-
 {% for post in site.posts %}
+  {% assign loopindex = forloop.index | modulo: 2 %}
+  {% if loopindex == 1 %}
 
-  <div class="row row-{{loop.index}}">
+  <div class="row row-{{forloop.index}}">
 
-    <a href="{{ post.url }}" class="half">
+    <a href="{{ post.url }}" class="quarter">
+      {% if post.thumbnail %}
       <img
         sizes="(min-width: 1em) 50vw, 100vw"
         srcset="{{ site.url }}/assets/i/{{ post.thumbnail }} 500w,
                 {{ site.url }}/assets/i/{{ post.thumbnail }} 750w,
                 {{ site.url }}/assets/i/{{ post.thumbnail }} 1000w"
         alt="{{ post.title }}">
+  {% else %}
+  {% capture colourstring %}3{{loopindex}}{{forloop.index}}{% endcapture %}
+  {% assign colourstring = colourstring | slice: -3, 3 %}
+  <div style="float:right;margin-right:10px;width: 60%;height: 100px;background-color: #{{ colourstring }}"></div>  
+  {% endif %}
     </a>
 
-    <a href="{{ post.url }}" class="quarter odd-shape">
+  {% else %}
+
+    <a href="{{ post.url }}" class="quarter">
+      {% if post.thumbnail %}
       <img
         sizes="(min-width: 1em) 50vw, 100vw"
         srcset="{{ site.url }}/assets/i/{{ post.thumbnail }} 500w,
                 {{ site.url }}/assets/i/{{ post.thumbnail }} 750w,
                 {{ site.url }}/assets/i/{{ post.thumbnail }} 1000w"
         alt="{{ post.title }}">
+  {% else %}  
+  {% capture colourstring %}3{{loopindex}}{{forloop.index}}{% endcapture %}
+  {% assign colourstring = colourstring | slice: -3, 3 %}
+  <div style="margin-left:10px;width: 60%;height: 100px;background-color: #{{ colourstring }}"></div>  
+  {% endif %}
     </a>
-
   </div>
 
+  {% endif %}
 {% endfor %}
-
 </main>
-
 
 <hr>
 
