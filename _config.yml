@@ -4,3 +4,8 @@ permalink: pretty
 sass:
   sass_dir: _scss
   style: compressed
+
+
+gems: [jekyll-paginate, jekyll-gist]
+
+paginate: 6

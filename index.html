@@ -1,139 +1,60 @@
 ---
 layout: default
-title: Dug test site
-description: Sample code for test.
+title: Shopify loop test
+description: Testing cycle tag
 ---
 <!-- sizes="(min-width: 1em) 50vw, (min-width: 40em) 25vw, 100vw" -->
 
-<main class="portfolio-index">
-{% for post in site.posts %}
+<!-- 
+ post.date |   / by  post.author  
+ page.date | date_to_long_string 
+-->
+
+<section id="primaryIndex" class="flipper">  
+
+{% for post in paginator.posts limit:8 %}
   {% assign loopindex = forloop.index | modulo: 2 %}
   {% if loopindex == 1 %}
 
-  <div class="row row-{{forloop.index}}">
-
-    <a href="{{ post.url }}" class="quarter">
-      {% if post.thumbnail %}
-      <img
-        sizes="(min-width: 1em) 50vw, 100vw"
-        srcset="{{ site.url }}/assets/i/{{ post.thumbnail }} 500w,
-                {{ site.url }}/assets/i/{{ post.thumbnail }} 750w,
-                {{ site.url }}/assets/i/{{ post.thumbnail }} 1000w"
-        alt="{{ post.title }}">
-  {% else %}
-  {% capture colourstring %}3{{loopindex}}{{forloop.index}}{% endcapture %}
-  {% assign colourstring = colourstring | slice: -3, 3 %}
-  <div style="float:right;margin-right:10px;width: 60%;height: 100px;background-color: #{{ colourstring }}"></div>  
-  {% endif %}
-    </a>
+<a class="odd {% cycle 'shapeA', 'shapeB', 'shapeC', 'shapeD', 'shapeE' %}" href="{{ post.url }}" style="display:inline-block;background-size:cover;background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1) ), url(/assets/i/{{post.thumbnail}})"><span class="postTitle">{{ post.title }}</span> <span class="metadata">{{ post.author }} // {{ post.date | date_to_long_string }}</span></a>
 
   {% else %}
 
-    <a href="{{ post.url }}" class="quarter">
-      {% if post.thumbnail %}
-      <img
-        sizes="(min-width: 1em) 50vw, 100vw"
-        srcset="{{ site.url }}/assets/i/{{ post.thumbnail }} 500w,
-                {{ site.url }}/assets/i/{{ post.thumbnail }} 750w,
-                {{ site.url }}/assets/i/{{ post.thumbnail }} 1000w"
-        alt="{{ post.title }}">
-  {% else %}  
-  {% capture colourstring %}3{{loopindex}}{{forloop.index}}{% endcapture %}
-  {% assign colourstring = colourstring | slice: -3, 3 %}
-  <div style="margin-left:10px;width: 60%;height: 100px;background-color: #{{ colourstring }}"></div>  
-  {% endif %}
-    </a>
-  </div>
+<a class="even {% cycle 'shapeA', 'shapeB', 'shapeC', 'shapeD', 'shapeE' %}" href="{{ post.url }}" style="display:inline-block;background-size: cover;background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1) ), url(/assets/i/{{post.thumbnail}})"><span class="postTitle">{{ post.title }}</span> <span class="metadata">{{ post.author }} // {{ post.date | date_to_long_string }}</span></a>
+
+    <p class="endOfRow" />
 
   {% endif %}
 {% endfor %}
-</main>
+
+<!-- Pagination links -->
+<div class="pagination">
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path }}" class="previous">Previous</a>
+  {% else %}
+    <span class="previous">Previous</span>
+  {% endif %}
+  <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path }}" class="next">Next</a>
+  {% else %}
+    <span class="next ">Next</span>
+  {% endif %}
+</div>
+
+</section>
 
 <hr>
-
-{% for post in site.posts %}
-  <div class='listing'>
-    <a class='post-title' href='{{ post.url }}'>{{ post.title }}</a>
-  </div>
-{% endfor %}
-
-<hr>
-
 
 <main class="portfolio-index">
-  <div class="row row-1">
-    <a href="/portfolio/fluxx" class="half">
-      <img
-        sizes="(min-width: 1em) 50vw, 100vw"
-        srcset="/assets/i/Aybabtu.png 500w,
-                /assets/i/Aybabtu.png 750w,
-                /assets/i/Aybabtu.png 1000w"
-        alt="All your bases are belong to us">
-    </a>
-    <a href="/portfolio/frac" class="quarter odd-shape">
-      <img
-        sizes="(min-width: 1em) 50vw, (min-width: 40em) 25vw, 100vw"
-        srcset="/assets/i/Budleigh_Christmas_Swim.jpg 250w,
-                /assets/i/Budleigh_Christmas_Swim.jpg 500w,
-                /assets/i/Budleigh_Christmas_Swim.jpg 750w"
-        alt="Billy, Jed and Dug on Budleigh beach Christmas 2008">
-    </a>
-  </div>
-  
-  <div class="row row-2">
-    <a href="/portfolio/type-film" class="quarter">
-      <img
-        sizes="(min-width: 1em) 50vw, (min-width: 40em) 25vw, 100vw"
-        srcset="/assets/i/yougottabefuckingkidding.png 250w,
-                /assets/i/yougottabefuckingkidding.png 500w,
-                /assets/i/yougottabefuckingkidding.png 720w"
-        alt="Welcome to Yahoo, have a nice day">
-    </a>
-    <a href="/portfolio/stenbergs" class="half">
-      <img
-        sizes="(min-width: 1em) 50vw, 100vw"
-        srcset="/assets/i/Clem_Forty_Hall.jpg 500w,
-                /assets/i/Clem_Forty_Hall.jpg 750w,
-                /assets/i/Clem_Forty_Hall.jpg 1000w"
-        alt="Clem at Forty Hall">
-    </a>
-  </div>
 
-  <div class="row row-3">
-    <a href="/portfolio/curds" class="quarter">
-      <img
-        sizes="(min-width: 1em) 50vw, (min-width: 40em) 25vw, 100vw"
-        srcset="/assets/cheese-curds/cover-small.jpg 500w,
-                /assets/cheese-curds/cover-medium.jpg 750w,
-                /assets/cheese-curds/cover-large.jpg 1000w"
-        alt="Try the Fried Cheese Curds">
-    </a>
-    <a href="/portfolio/futura" class="quarter">
-      <img
-        sizes="(min-width: 1em) 50vw, (min-width: 40em) 25vw, 100vw"
-        srcset="/assets/futura/cover-small.png 500w,
-                /assets/futura/cover-medium.png 750w,
-                /assets/futura/cover-large.png 1000w"
-        alt="The Futura is Here">
-    </a>
-  </div>
+<h2>Flange</h2>
 
-  <div class="row row-4">
-    <a href="/portfolio/underwood" class="half">
-      <img
-        sizes="(min-width: 1em) 50vw, 100vw"
-        srcset="/assets/underwood/cover-small.png 500w,
-                /assets/underwood/cover-medium.png 750w,
-                /assets/underwood/cover-large.png 1000w"
-        alt="Underwood">
-    </a>
-    <a href="/portfolio/homelessness" class="quarter odd-shape">
-      <img
-        sizes="(min-width: 1em) 50vw, (min-width: 40em) 25vw, 100vw"
-        srcset="/assets/homelessness/cover-small.jpg 500w,
-                /assets/homelessness/cover-medium.jpg 750w,
-                /assets/homelessness/cover-large.jpg 1000w"
-        alt="Homelessness: Too Big to Ignore">
-    </a>
-  </div>
+<ol>
+{% for post in site.posts offset:5 %}
+<li><a href='{{ post.url }}'>{{ post.title }}</a></li>
+{% endfor %}
+</ol>
+
 </main>
+

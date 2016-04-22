@@ -27,9 +27,9 @@ section.flipper {
   border: 0px solid orange;
   }
 .flipper a {margin:0; padding: 0;display: inline-block;}
-.flipper a {padding: 0;}
-.flipper a.odd {margin: 0 10px 10px 0;}
-.flipper a.even {margin: 0 0 10px 0;}
+.flipper a img {padding: 0;}
+.flipper a.odd img {margin: 0 10px 10px 0;}
+.flipper a.even img {margin: 0 0 10px 0;}
 .flipper p.endOfRow {margin: 0;padding: 0;line-height: 100%;clear: both;}
 .flipper a.odd {border:0px solid green;}
 .flipper a.even {border:0px solid red;}
@@ -42,18 +42,18 @@ section.flipper {
   font-weight: 700;
   font-family: helvetica, sans-serif;
   font-size: x-small;
+  text-align: center;
 }
 
 a .postTitle {
   display:block;
-  padding: 1em 0.25em 0 1em;
+  padding-top:30%;
 }
 
 a .metadata {
   font-weight: 400;
   display:block;
   text-transform: none;
-  padding: 0.25em 0.25em 0 1em;
 }
 
 /* 
@@ -62,39 +62,42 @@ but ensure they are always a factor of 'golden mean' value of 6x7
 */
 
  .shapeA {width: 266px;height: 228px;}
- a.odd.shapeA {margin-left:0;}
+ a.odd img.shapeA {margin-left:0;}
  .shapeB {width: 150px;height: 175px;}
- a.odd.shapeB {margin-left:116px;}
+ a.odd img.shapeB {margin-left:116px;}
  .shapeC {width: 140px;height: 120px;}
- a.odd.shapeC {margin-left:126px;}
+ a.odd img.shapeC {margin-left:126px;}
  .shapeD {width: 98px;height: 84px;}
- a.odd.shapeD {margin-left:168px;}
+ a.odd img.shapeD {margin-left:168px;}
  .shapeE {width: 180px;height: 210px;}
- a.odd.shapeE {margin-left:86px;}
+ a.odd img.shapeE {margin-left:86px;}
+
 
 /* set index image widths for wider screens */
 @media only screen and (min-width : 1280px) {
 section.flipper {width: 812px;}
  .shapeA {width: 399px;height: 342px;}
- a.odd.shapeA {margin-left:0;}
+ a.odd img.shapeA {margin-left:0;}
  .shapeB {width: 225px;height: 262px;}
- a.odd.shapeB {margin-left:174px;}
+ a.odd img.shapeB {margin-left:174px;}
  .shapeC {width: 210px;height: 180px;}
- a.odd.shapeC {margin-left:189px;}
+ a.odd img.shapeC {margin-left:189px;}
  .shapeD {width: 147px;height: 126px;}
- a.odd.shapeD {margin-left:252px;}
+ a.odd img.shapeD {margin-left:252px;}
  .shapeE {width: 270px;height: 315px;}
- a.odd.shapeE {margin-left:129px;}
+ a.odd img.shapeE {margin-left:129px;}
   }
+
 
 /* set width and margin for iphone-6-sized shufflebox unit */
 @media only screen and (max-width : 667px) {
     /* iphone 6 portrait and smaller go here */ 
     /* body {background-color: red ! important;} */
-    .flipper a {width: 99%;height: 9em;}
-    a {margin-left:0px ! important;}
+    .flipper a img {width: 99%;height: auto;}
+    a img {margin-left:0px ! important;}
     section.flipper {width: 99%;}
   }
+
 
   </style>
 

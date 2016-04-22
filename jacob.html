@@ -1,0 +1,66 @@
+---
+layout: default
+title: Dug test site
+description: Sample code for test.
+---
+<!-- sizes="(min-width: 1em) 50vw, (min-width: 40em) 25vw, 100vw" -->
+
+<main class="portfolio-index">
+
+<h1>Most recent updates</h1>
+
+{% for post in site.posts limit:8 %}
+  {% assign loopindex = forloop.index | modulo: 2 %}
+  {% if loopindex == 1 %}
+
+  <div class="row row-{{forloop.index}}">
+
+    <a href="{{ post.url }}" class="quarter">
+      {% if post.thumbnail %}
+      <img
+        sizes="(min-width: 1em) 50vw, 100vw"
+        srcset="{{ site.url }}/assets/i/{{ post.thumbnail }} 500w,
+                {{ site.url }}/assets/i/{{ post.thumbnail }} 750w,
+                {{ site.url }}/assets/i/{{ post.thumbnail }} 1000w"
+        alt="{{ post.title }}">
+  {% else %}
+  {% capture colourstring %}3{{loopindex}}{{forloop.index}}{% endcapture %}
+  {% assign colourstring = colourstring | slice: -3, 3 %}
+  <div style="float:right;margin-right:10px;width: 60%;height: 100px;background-color: #{{ colourstring }}"></div>  
+  {% endif %}
+    </a>
+
+  {% else %}
+
+    <a href="{{ post.url }}" class="quarter">
+      {% if post.thumbnail %}
+      <img
+        sizes="(min-width: 1em) 50vw, 100vw"
+        srcset="{{ site.url }}/assets/i/{{ post.thumbnail }} 500w,
+                {{ site.url }}/assets/i/{{ post.thumbnail }} 750w,
+                {{ site.url }}/assets/i/{{ post.thumbnail }} 1000w"
+        alt="{{ post.title }}">
+  {% else %}  
+  {% capture colourstring %}3{{loopindex}}{{forloop.index}}{% endcapture %}
+  {% assign colourstring = colourstring | slice: -3, 3 %}
+  <div style="margin-left:10px;width: 60%;height: 100px;background-color: #{{ colourstring }}"></div>  
+  {% endif %}
+    </a>
+  </div>
+
+  {% endif %}
+{% endfor %}
+
+<h2>FFFFeeee Earlier participant entries</h2>
+
+{% for post in site.posts offset:8 %}
+  <div class='listing'>
+  <hr>
+    <h3><a class='post-title' href='{{ post.url }}'>{{ post.title }}</a></h3>
+    <p>{{ post.excerpt }}</p>
+  </div>
+{% endfor %}
+
+</main>
+
+
