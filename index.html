@@ -139,7 +139,7 @@ description: Testing cycle tag
 {% for post in site.posts offset:24 limit:5 %}
 <div class='listing'>
   <hr>
-    <h3>Featured entry tile: <a class='post-title' href='{{ post.url }}'>{{ post.title }}</a></h3>
+    <h3>Featured entry title: <a class='post-title' href='{{ post.url }}'>{{ post.title }}</a></h3>
     <p>{{ post.excerpt }}</p>
 </div>
 {% endfor %}
