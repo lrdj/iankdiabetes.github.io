@@ -94,10 +94,8 @@ footer {
   }
 }
 
-nav a {margin-right:0.75em;}
-
-
-
-
+nav a {text-decoration:none;}
+nav a::after {content: "\00a0\00a0|\00a0\00a0";}
+nav a:last-child::after {content: "";}
 
 
