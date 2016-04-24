@@ -5,18 +5,19 @@ body {
   padding: 0 $half-gutter;
   img {
     width:100%;
+    height:inherit;
   }
 }
 
 .rule {
   width:100%;
   border-top: $rule;
-  padding-bottom: $gutter;
+  margin: 1em 0 2em 0;
 }
 
 header {
-  min-height:$row;
-  margin-top:$row;
+  min-height:7em;
+  margin-top:2em;
   padding:0 $half-gutter;
   h1 {
     float:left;
@@ -34,6 +35,7 @@ header {
 .portfolio-index {
   img {
     width:100%;
+    height:inherit;    
     padding:$half-gutter;
     max-width:($layout-width / 2) + 0rem;
   }

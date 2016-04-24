@@ -2,7 +2,7 @@
 layout: post
 title: "Durufle Requiem"
 date: 2014-04-07 00:38:51
-description: " Wow, you don't see your daughter on-stage at the Royal Festival Hall everyday... Really good evening tonight, N, HEF and I headed down to see CLF's choir (Finchley Children's Music Group Chamber Choir fcmg.org.uk) in full flight doing Duruflé's Requiem standing in front of the most massive organ (which has been recently restored). Great evening:-)..."
+description: " Wow, you don&#8217;t see your daughter on-stage at the Royal Festival Hall everyday&#8230; Really good evening tonight, N, HEF and I headed down to see CLF&#8217;s choir (Finchley Children&#8217;s Music Group Chamber Choir fcmg.org.uk) in full flight doing Duruflé&#8217;s&#8230;"
 thumbnail: rfh.jpg
 alt: "rfh.jpg"
 

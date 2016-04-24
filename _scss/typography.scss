@@ -1,4 +1,4 @@
-html {
+html,p,ul,ol {
   font-size:$font-size + 0px;
   font-family:"aktiv-grotesk","Helvetica Neue", Helvetica, sans-serif;
 }
@@ -8,13 +8,14 @@ h1 {
   line-height:$leading;
   font-weight:700;
   color: $dark-gray;
+  margin-bottom:0.25em;
 }
 
 h2 {
   font-size:1rem;
   line-height:$leading;
   margin:0;
-  font-weight:300;
+  font-weight:700;
   color:$light-gray;
 }
 
@@ -28,13 +29,15 @@ h3 {
   text-transform: capitalize;
 }
 
-p {
+p,ul,ol {
   font-size:1rem;
   line-height:$leading;
-  margin:0;
+  margin:0 0 1em 0;
   font-weight:300;
   color:$light-gray;
 }
+
+p.meta {margin-bottom: 1.5em;}
 
 .little-p {
   p, h3 {
@@ -44,12 +47,15 @@ p {
 }
 
 a {
-  text-decoration: none;
   color:$light-gray;
   @include transition();
   &:hover {
     color: $dark-gray !important;
   }
+}
+
+.flipper a {
+  text-decoration: none;
 }
 
 .underlined-link a {
@@ -87,3 +93,11 @@ footer {
     }
   }
 }
+
+nav a {margin-right:0.75em;}
+
+
+
+
+
+

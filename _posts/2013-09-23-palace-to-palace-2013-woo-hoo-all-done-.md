@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "Palace-to-Palace 2013: Woo-hoo all done:-)"
+title: "Palace-to-Palace 2013 --  Woo-hoo all done -- -)"
 date: 2013-09-23 08:30:51
-description: "Create Maps or search from 80 million at MapMyRide Right:-) Did it! Got the cycling done but failed on the fundraising. Any generous souls wanting to help support the work the Prince's Trust does with young people, the donation link is here: http://my.artezglobal.com/personalPage.aspx..."
-thumbnail: 
+description: " Create Maps or search from 80 million at MapMyRide Right -- -) Did it! Got the cycling done but failed on the fundraising. Any generous souls wanting to help support the work the Prince&#8217;s Trust does with young people, the donation&#8230;"
+thumbnail: defaultThumbnail.png
 alt: ""
 
 

@@ -1,10 +1,8 @@
 ---
-
 layout: post
-
-title: "Wireframes v prototypes yakety yak..."
+title: "Wireframes v prototypes yakety yak&#8230;"
 date: 2014-04-25 09:27:36
-description: Have recently followed a couple of discussions along the lines of 'wireframes are dead' touting the cure-all properties of prototyping \(like this or this\). I love and use both methods depending on client and production context so I\'m always left feeling a bit bemused by the level and depth of side-taking. Was reviewing some old bookmarks and came across a lovely post by Owen Briggs -- Something that bothers me with most buildings is they are drawn. The designers drew floorplans and elevations and then set these perpendicular to create space. Their direct thinking was all done at the two...
+description: " Have recently followed a couple of discussions along the lines of &#8220;wireframes are dead&#8221; touting the cure-all properties of prototyping (like this or this). I love and use both methods depending on client and production context so I&#8217;m always&#8230;"
 thumbnail: structures.jpg
 alt: "wireframe structure"
 
@@ -12,7 +10,7 @@ tags: UX
 author: dug
 ---
 
-<p><img alt="wireframe structure from USC Proving Ground training" src="http://donkeyontheedge.com/i/structures.jpg" width="580" height="289" /></p>
+<p><img alt="wireframe structure from USC Proving Ground training" src="/assets/i/structures.jpg" width="580" height="289" /></p>
 
 <p>Have recently followed a couple of discussions along the lines of "wireframes are dead" touting the cure-all properties of prototyping (like <a href="http://zurb.com/article/898/wireframes-are-dead-long-live-wireframes">this</a> or <a href="http://lanyrd.com/2013/uxmad/sckkbg/">this</a>). I love and use both methods depending on client and production context so I'm always left feeling a bit bemused by the level and depth of side-taking.</p>
 

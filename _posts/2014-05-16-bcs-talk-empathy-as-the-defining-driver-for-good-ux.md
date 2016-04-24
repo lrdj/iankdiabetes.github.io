@@ -1,16 +1,16 @@
 ---
 layout: post
-title: "BCS Talk: Empathy as the defining driver for good ux"
+title: "BCS Talk --  Empathy as the defining driver for good ux"
 date: 2014-05-16 17:28:15
-description: " Did a talk last night at the BCS about what makes a great user experience. High point of the evening, I showed my mental notes cards and did an experiment with the audience to illustrate anchoring &amp; adjustment. I hosted a mock auction where the audience had to write bids on a card (with the premise like an Antiques Roadshow thing where you had to guess the price). The result was amasing. In a room with aprox 60 people 22 cards were filled in 2 participants ignored the anchors entirely 3 participants may not have been influenced 17 users..."
+description: " Did a talk last night at the BCS about what makes a great user experience. High point of the evening, I showed my mental notes cards and did an experiment with the audience to illustrate anchoring &amp; adjustment. I&#8230;"
 thumbnail: bcs-talk.jpg
 alt: "bcs-talk.jpg"
 
-tags: mentalnotes UX
+tags: mentalnotes, UX
 author: dug
 ---
 
-<p><img src="http://donkeyontheedge.com/i/bcs-talk.jpg" width="580" height="180" alt="Good crowd for talk on empathy, UX, art and science" /></p>
+<p><img src="/assets/i/bcs-talk.jpg" width="580" height="180" alt="Good crowd for talk on empathy, UX, art and science" /></p>
 
 <p>Did a talk last night at the <a href="http://bcs.org"><span class="caps">BCS</span></a> about what makes a great user experience. High point of the evening, I showed my <a href="http://getmentalnotes.com">mental notes</a> cards and did an experiment with the audience to illustrate anchoring &amp; adjustment. I hosted a mock auction where the audience had to write bids on a card (with the premise like an Antiques Roadshow thing where you had to guess the price).</p>
 
