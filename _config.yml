@@ -8,7 +8,7 @@ sass:
 
 gems: [jekyll-paginate, jekyll-gist]
 
-# paginate: 8
+paginate: 10
 
 paginate_limit: 10
 
