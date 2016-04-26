@@ -1,0 +1,13 @@
+---
+layout: post
+title: "Banner advertising by user history"
+date: 2010-07-12 15:48:10
+description: "I was talking with Chris Brown today about the way we use banners on the business&#8217;s website. Looking at analytical data on the homepage these banners are rarely clicked compared to the products we display.The problem, as I see it,&#8230;"
+thumbnail: defaultThumbnail.png
+alt: ""
+
+
+author: darren
+---
+
+I was talking with Chris Brown today about the way we use banners on the business's website. Looking at analytical data on the homepage these banners are rarely clicked compared to the products we display.<br /><br />The problem, as I see it, is that we are juggling two different requirements. One is to serve the customer and the other is to serve the supplier who pays to showcase their products.<br /><br />The issue in continuing in this manner is that we dilute the product offering and end up focussing on nothing in particular and conversion ultimately will suffer.<br /><br />As the conversation progressed we arrived at the conclusion that banners would better our customers if they were specific. At present we show (for example) a "sharp quattron" tv banner for all users. From a sales point of view, it may an easy sell to say we can target {x} amount of users through our website but in doing so you may only target 0.2% of the audience and be completely irrelevant to other 98%.<br /><br />A way around this would be to generate banners around user history and display banners based on a users browsing habits. If a user visits {brand}, typically to comparison shop, and comes back to {brand} we can target them based on their criteria. In doing so we can shout to suppliers that we effectively target users specifically at a higher converstion rate than before. <br /><br />From a customers point of view, this would increase relevance and therefore confidence in the shopping experience.<br /><br />I have worked in an environment where developers have written similar functionality, but in that case the site was 100% under our development control. Assuming that with GEM we do not have this luxury, maybe a third party product is required. <br /><br />Choicestream may or may not solve this issue, its a good starting point of reference, and may help convince people that requirements should be re-aligned.<br /><br /><a href="http://www.choicestream.com/products/advertising/">http://www.choicestream.com/products/advertising/</a><br /><br /><a href="http://www.choicestream.com/products/recommendations/">http://www.choicestream.com/products/recommendations/</a><br /><br />
