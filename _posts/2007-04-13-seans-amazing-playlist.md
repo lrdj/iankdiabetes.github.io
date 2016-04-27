@@ -3,22 +3,39 @@ layout: post
 title: "Sean&#8217;s amazing playlist"
 date: 2007-04-13 09:52:20
 description: "Tucking into the mega opus &#8220;Mood Aberdeen&#8221; created by Sean Wilke for Nick&#8217;s 40th birthday. It&#8217;s a huge thing, more than fifteen hours of solid jazz, expertly intertwining the classics with the obscure. Am currently in &#8220;Fitdee&#8221;. Thanks again Sean -- -)&#8230;"
-thumbnail: defaultThumbnail.png
-alt: ""
-
-tags: aberdeen, gapingvoid, jazz, nicki, sean
+thumbnail: mood_aberdeen.gif
+alt: "Sean' fab playlist for Nicki's 40th"
+tags: 
+  - aberdeen
+  - gapingvoid
+  - jazz
+  - nicki
+  - sean
 author: dug
 ---
+<img alt="mood_aberdeen.gif" src="{{site.url}}}mood_aberdeen.gif" width="178" height="153" class="left" />Tucking into the mega opus "Mood Aberdeen" created by Sean Wilke for Nick's 40th birthday.
 
-<p><img alt="mood_aberdeen.gif" src="http://www.donkeyontheedge.com/i/mood_aberdeen.gif" width="178" height="153" class="left" />Tucking into the mega opus "Mood Aberdeen" created by Sean Wilke for Nick's 40th birthday. </p>
+It's a huge thing, more than fifteen hours of solid jazz, expertly intertwining the classics with the obscure. Am currently in "Fitdee". Thanks again Sean:-)
 
-<p>It's a huge thing, more than fifteen hours of solid jazz, expertly intertwining the classics with the obscure. Am currently in "Fitdee". Thanks again Sean:-)</p>
+<small><em>ed: the following added 16/7/2007</em></small>
 
-<p><small><em>ed: the following added 16/7/2007</em></small></p>
+There's a man out there who can't listen to jazz anymore... I'm adding the playlist below to cheer him up.
 
-<p>There's a man out there who can't listen to jazz anymore... I'm adding the playlist below to cheer him up.</p>
+## Mood Aberdeen. A moment in Sean and Nicki's life expressed in six movements:-)
 
-<h2>Mood Aberdeen. A moment in Sean and Nicki's life expressed in six movements:-)</h2>
+### 1. Fitdee
+
+| Song                     | time  | Artist        | Album                   |
+|--------------------------|-------|---------------|-------------------------|
+| Make A List, Make A Wish | 16:56 | Milcho Leviev | Blues For The Fisherman |
+| Sad, A Little Bit        | 7:23  | Milcho Leviev | Blues For The Fisherman |
+| Ophelia                  | 10:31 | Milcho Leviev | Blues For The Fisherman |
+
+### 2. King Street flats
+
+| Song                     | time  | Artist        | Album                   |
+|--------------------------|-------|---------------|-------------------------|
+| Make A List, Make A Wish | 16:56 | Milcho Leviev | Blues For The Fisherman |
 
 <table id="moodAberdeen">
 	<tr>
@@ -457,4 +474,4 @@ author: dug
 	</tr>
 </table>
 
-<p>I knew nothing of jazz until I met Nicki and she started playing me the tapes Sean and Harry and duncan had lovingly crafted for her. Sean's playlist below sort of captures that moment of wonder for me and I hope it might give a fresh taste to those in need...</p>
+I knew nothing of jazz until I met Nicki and she started playing me the tapes Sean and Harry and duncan had lovingly crafted for her. Sean's playlist above sort of captures that moment of wonder for me and I hope it might give a fresh taste to those in need...
