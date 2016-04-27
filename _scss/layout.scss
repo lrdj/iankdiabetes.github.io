@@ -210,7 +210,7 @@ footer {
 @media (min-width:33rem) {
   header {
     nav {
-      width:50%;
+      width:auto;
       float:right;
       padding-left: $half-gutter;
     }
@@ -301,7 +301,7 @@ footer {
 
 @media (min-width: 52rem) {
   header nav {
-    width:30%;
+    width:auto;
     padding-left: $gutter;
   }
   .project {

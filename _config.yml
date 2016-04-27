@@ -4,6 +4,8 @@ permalink: pretty
 sass:
   sass_dir: _scss
   style: compressed
+# hack to build thumbnail link
+thumbURL: "/assets/i/"
 
 
 gems: [jekyll-paginate, jekyll-gist]

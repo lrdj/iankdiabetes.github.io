@@ -1,10 +1,11 @@
 ---
+layout: page
 title: Archives
+description: This is Dug's blog. It's mostly random observations and stuff for his family
 thumbnail: city2.jpg
 ---
 
-(was: layout: categories)
-
+<h1>Post archives</h1>
 
 {% for post in site.posts %}
   <div class='listing'>
@@ -12,3 +13,4 @@ thumbnail: city2.jpg
     <p class='meta'>{{ post.date | date_to_long_string }} / by {{ post.author }}</p>
   </div>
 {% endfor %}
+
