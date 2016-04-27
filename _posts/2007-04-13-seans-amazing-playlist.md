@@ -13,7 +13,7 @@ tags:
   - sean
 author: dug
 ---
-<img alt="mood_aberdeen.gif" src="{{site.url}}}mood_aberdeen.gif" width="178" height="153" class="left" />Tucking into the mega opus "Mood Aberdeen" created by Sean Wilke for Nick's 40th birthday.
+<img alt="mood_aberdeen.gif" src="{{site.url}}mood_aberdeen.gif" width="178" height="153" class="left" />Tucking into the mega opus "Mood Aberdeen" created by Sean Wilke for Nick's 40th birthday.
 
 It's a huge thing, more than fifteen hours of solid jazz, expertly intertwining the classics with the obscure. Am currently in "Fitdee". Thanks again Sean:-)
 
