@@ -97,18 +97,20 @@ li.current-page {font-weight: 700;color: silver;}
 
 /* Lunr search result display */
 .result {
-  padding-bottom:2em;
-  clear:both
+  {% if page.title == "Archival Search" %}padding-bottom:0;{% else %}padding-bottom:1em;{% endif %}
+  clear:both;
   }
+.result-body {
+  clear:both;
+  padding-top: 0.5em;
+}  
 .result img {
   display:inline-block;
   float:left;
   width: 15%;
+  max-width: 98px;
   margin: 0 2em 0 0;
   padding-top: 0;
-}
-.result-body {
-  padding-top: 1em;
 }
 
   </style>

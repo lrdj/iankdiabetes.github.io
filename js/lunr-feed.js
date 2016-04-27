@@ -9,7 +9,7 @@ var index = lunr(function () {
   this.field('tags')
   this.ref('id')
 });
-{% assign count = 0 %}{% for post in site.posts limit:3 %}
+{% assign count = 0 %}{% for post in site.posts limit:300 %}
 index.add({
   title: {{post.title | jsonify}},
   category: {{post.category | jsonify}},
@@ -20,7 +20,7 @@ index.add({
 console.log( jQuery.type(index) );
 
 // builds reference data foo
-var store = [{% for post in site.posts limit:3 %}{
+var store = [{% for post in site.posts limit:300 %}{
   "title": {{post.title | jsonify}},
   "link": {{ post.url | jsonify }},
   "image": {{ post.thumbnail | prepend: site.thumbURL | jsonify }},
