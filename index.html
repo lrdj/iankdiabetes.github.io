@@ -136,7 +136,7 @@ description: Donkey transfered in Jekyll on Github pages in April 2016
 
 <main class="portfolio-index">
 
-{% for post in site.posts offset:24 limit:5 %}
+{% for post in site.posts offset:24 limit:10 %}
 <div class='listing'>
   <hr>
     <h3>Featured entry title: <a class='post-title' href='{{ post.url }}'>{{ post.title }}</a></h3>
@@ -145,7 +145,7 @@ description: Donkey transfered in Jekyll on Github pages in April 2016
 {% endfor %}
 
 <ul>
-{% for post in site.posts offset:29 limit:100 %}
+{% for post in site.posts offset:34 limit:100 %}
 <li><a href='{{ post.url }}'>{{ post.title }}</a></li>
 {% endfor %}
 </ul>

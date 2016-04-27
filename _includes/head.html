@@ -78,13 +78,24 @@ section.flipper {width: 812px;}
  a.odd.shapeE {margin-left:129px;}
   }
 
+/* set auto widths for legacy in-post items that are too wide for phone screen */
+
+main.portfolio-index iframe, main.portfolio-index img {
+  width: 33% ! important;
+  height: auto ! important;
+}
+
 /* set width and margin for iphone-6-sized shufflebox unit */
 @media only screen and (max-width : 667px) {
     /* iphone 6 portrait and smaller go here */ 
     body {background-color: #fff ! important;}
-    .flipper a {width: 99%;height: 9em;}
+    .flipper a {width: 100%;height: 9em;}
     a {margin-left:0px ! important;}
-    section.flipper {width: 99%;}
+    section.flipper {width: 100%;}
+    main.portfolio-index iframe, main.portfolio-index img {
+      width: 100% ! important;
+      height: auto ! important;
+    }
   }
 
 /* pagination */
