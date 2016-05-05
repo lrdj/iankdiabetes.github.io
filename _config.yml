@@ -16,6 +16,7 @@ paginate_limit: 10
 
 # Disqus post comments
 # (leave blank to disable Disqus)
-disqus_shortname: dug
+# disqus_shortname: dug
+
 
 
