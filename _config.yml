@@ -4,9 +4,13 @@ permalink: pretty
 sass:
   sass_dir: _scss
   style: compressed
+
 # hack to build thumbnail link
 thumbURL: "/assets/i/"
 
+# publisher metadata
+author: Ian Kilby
+author-description: A guy who reversed his diabetes and is telling people about it.
 
 gems: [jekyll-paginate, jekyll-gist]
 
@@ -16,7 +20,7 @@ paginate_limit: 10
 
 # Disqus post comments
 # (leave blank to disable Disqus)
-# disqus_shortname: dug
+disqus_shortname: iankdiabetes
 
 
 
