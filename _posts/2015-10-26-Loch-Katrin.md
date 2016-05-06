@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Good walk - Loch Katrin"
+title: "Good walk/cycle on Loch Katrin"
 date: 2015-10-26 11:47:20
 description: ""
 thumbnail: Loch-Katrin-2015-10-26.jpg
