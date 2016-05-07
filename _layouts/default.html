@@ -5,5 +5,10 @@
     {% include header.html %}
     {{ content }}
     {% include footer.html %}
+
+{% if page.title == "Content index" %}
+<script id="dsq-count-scr" src="//reversemydiabetes.disqus.com/count.js" async></script>
+{% endif %}
+
   </body>
 </html>
