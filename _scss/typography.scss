@@ -1,32 +1,29 @@
-html,p,ul,ol {
+html,body,section,div,p,ul,ol {
   font-size:$font-size + 0px;
-  font-family:"aktiv-grotesk","Helvetica Neue", Helvetica, sans-serif;
+  font-family:'SegoeUILight', Helvetica, sans-serif;
 }
 
-h1 {
+h1,h2,h3,h4,h5,h6,h7 { 
   font-size:1rem;
+  font-family: 'SegoeUISemibold';
+  margin:0;
+}
+
+h1 
   line-height:$leading;
-  font-weight:700;
   color: $dark-gray;
   margin-bottom:0.25em;
 }
 
 h2 {
-  font-size:1rem;
   line-height:$leading;
-  margin:0;
-  font-weight:700;
   color:$light-gray;
 }
 
 h3 {
   font-size:1rem;
   line-height:$leading;
-  margin:0;
-  font-weight:300;
-  letter-spacing: 0.02rem;
   color: $dark-gray;
-  text-transform: capitalize;
 }
 
 p,ul,ol {
