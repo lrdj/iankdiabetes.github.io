@@ -9,4 +9,22 @@
       <a href="/search/">search</a>
     </nav>
 
+<div id="javascriptSlug">
+
+  <script type="text/javascript">
+    var searchMessage = "";
+    var refstring = document.referrer;
+    var n = refstring.indexOf("oogle");
+
+    if (n >= 1) { searchMessage = 'You searched for me in Google'} else { searchMessage = 'You did NOT search' } ;
+    searchMessage = '<p>' + searchMessage + '</p>'
+    document.write(searchMessage);
+  </script>
+
+</div>
+
 </header>
+
+
+
+
