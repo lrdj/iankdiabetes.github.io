@@ -16,7 +16,7 @@ body {
 }
 
 header {
-  min-height:7em;
+  min-height:6em;
   margin-top:2em;
   padding:0 $half-gutter;
   h1 {
@@ -212,6 +212,7 @@ footer {
     nav {
       width:auto;
       float:right;
+      text-align:right;
       padding-left: $half-gutter;
     }
   }

@@ -10,13 +10,13 @@ thumbURL: "/assets/i/"
 
 # publisher metadata
 author: Ian Kilby
-author_description: a guy who reversed his diabetes and is telling people about it.
+author_description: The story of a guy who reversed his type-2 diabetes.
 
 gems: [jekyll-paginate, jekyll-gist]
 
-paginate: 10
+paginate: 4
 
-paginate_limit: 10
+paginate_limit: 4
 
 # Disqus post comments
 # (leave blank to disable Disqus)

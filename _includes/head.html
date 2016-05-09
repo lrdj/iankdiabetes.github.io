@@ -12,6 +12,8 @@
 
 body {background-color: #fff;}
 
+#authorDesc { font-family: 'SegoeUISemibold'; }
+
 /* set width and marging for shufflebox unit - ideal = 48% */
 section.flipper {
   /* background-color: #eee; */
@@ -33,7 +35,6 @@ section.flipper {
   text-transform: uppercase;
   color: white;
   font-weight: 700;
-  font-family: helvetica, sans-serif;
   font-size: x-small;
 }
 
@@ -132,6 +133,15 @@ main.portfolio-index iframe, main.portfolio-index img {
   width: 66% ! important;
   height: auto ! important;
 }
+
+/* rolodex of posts */
+
+.rolodex { margin:0 0 0.5em 0; }
+
+.rolodex a { text-decoration: none; display: inline-block;min-height: 24px;}
+
+.rolodex .prev { padding:0 30px 0 30px; background: url(/assets/i/ptr-grey-left.gif) no-repeat top left;}
+.rolodex .next { padding:0 30px 0 0; background: url(/assets/i/ptr-grey-right.gif) no-repeat top right;}
 
 #javascriptSlug {display: none;}
 

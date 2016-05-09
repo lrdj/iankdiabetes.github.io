@@ -1,5 +1,6 @@
 ---
 layout: default
+description: This is Ian's blog. It's mostly random observations and stuff for his family
 ---
 
 <!-- title: Home -->
@@ -7,6 +8,13 @@ layout: default
 <div class='divider xs-12 topBarTrigger'></div>
 
 <div class='post-wrap'>
+
+  <div class="rolodex">
+    {% if page.previous.url %}<a class="prev" href="{{page.previous.url}}">{{page.previous.title}}</a>{% endif %}
+    {% if page.next.url %}<a class="next" href="{{page.next.url}}">up next: {{page.next.title}}</a>{% endif %}
+  </div>
+
+
   <h1>{{ page.title }}</h1>
   <p class='meta'>
     {{ page.author }} // {{ page.date | date_to_long_string }}
@@ -39,20 +47,4 @@ s.setAttribute('data-timestamp', +new Date());
 
 {% endif %}
 
-
-{% if site.disqus_zapatta_Mc-Foobar_OLD_DISQUS_SCRIPT %}
-  <div id="disqus_thread"></div>
-  <script type="text/javascript">
-    var disqus_shortname  = '{{ site.disqus_shortname }}';
-    var disqus_identifier = '{{ page.id }}';
-    var disqus_title      = '{{ page.title }}';
-
-    (function() {
-      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
-  </script>
-  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-{% endif %}
 
