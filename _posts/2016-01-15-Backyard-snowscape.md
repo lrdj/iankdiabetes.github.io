@@ -16,6 +16,6 @@ tags:
 author: ian
 ---
 
-![Ashfield in the snow](/assets/i/panos/Ashfield-snowscape-2016-01-15.jpg)
+![Ashfield in the snow](/assets/i/Ashfield-snowscape-2016-01-15.jpg)
 
 As backyards go, this is pretty awesome. More walks and feeling strength come back. It's been almost exactly two years since the accident so about time!
