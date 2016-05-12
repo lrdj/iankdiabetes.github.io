@@ -16,11 +16,11 @@ description: Donkey transfered in Jekyll on Github pages in April 2016
   {% assign loopindex = forloop.index | modulo: 2 %}
   {% if loopindex == 1 %}
 
-<a class="odd shapeA" href="{{ post.url }}" style="display:inline-block;background-size:cover;background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1) ), url({{site.thumbURL}}{{post.thumbnail}})"><span class="postTitle">{{ post.title }}</span> <span class="metadata">{{ post.author }} // {{ post.date | date_to_long_string }}</span></a>
+<a class="odd {% cycle 'shapeA', 'shapeB', 'shapeC', 'shapeD', 'shapeE' %}" href="{{ post.url }}" style="display:inline-block;background-size:cover;background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1) ), url({{site.thumbURL}}{{post.thumbnail}})"><span class="postTitle">{{ post.title }}</span> <span class="metadata">{{ post.author }} // {{ post.date | date_to_long_string }}</span></a>
 
   {% else %}
 
-<a class="even shapeB" href="{{ post.url }}" style="display:inline-block;background-size: cover;background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1) ), url({{site.thumbURL}}{{post.thumbnail}})"><span class="postTitle">{{ post.title }}</span> <span class="metadata">{{ post.author }} // {{ post.date | date_to_long_string }}</span></a>
+<a class="even {% cycle 'shapeA', 'shapeB', 'shapeC', 'shapeD', 'shapeE' %}" href="{{ post.url }}" style="display:inline-block;background-size: cover;background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1) ), url({{site.thumbURL}}{{post.thumbnail}})"><span class="postTitle">{{ post.title }}</span> <span class="metadata">{{ post.author }} // {{ post.date | date_to_long_string }}</span></a>
 
     <p class="endOfRow" />
 
