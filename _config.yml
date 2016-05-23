@@ -12,7 +12,7 @@ thumbURL: "/assets/i/"
 author: Ian Kilby
 author_description: The story of a guy who reversed his type-2 diabetes.
 
-gems: [jekyll-paginate, jekyll-gist]
+gems: [jekyll-paginate, jekyll-gist, jekyll-sitemap]
 
 paginate: 4
 
