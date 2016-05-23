@@ -1,0 +1,24 @@
+---
+layout: page
+title: Archives
+description: The archives list all posts or links to posts by category, tag, date and author
+---
+
+<h1>Archives</h1>
+
+<ul style="list-style:none;padding-left:0;width:98%">
+{% for post in site.posts limit:50 %}
+  <li style="width:98%"><a class='post-title' href='{{ post.url }}'>{{ post.title }}</a><span style="display: inline-block;float: right;">// {{ post.date | date_to_long_string }} / by {{ post.author }}</span></li>
+{% endfor %}
+</ul>
+
+<ul style="list-style:none;margin:2em 0 2em 0;padding-left:0;">
+{% for post in site.posts offset:50 %}
+  <li style="float:left;padding:0 1em 0 0;"><a class='post-title' href='{{ post.url }}'>{{ post.title | truncatewords: 6}}</a></li>
+{% endfor %}
+</ul>
+
+<p style="clear: both;">&nbsp;</p>
+
+
+

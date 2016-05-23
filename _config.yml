@@ -14,6 +14,11 @@ author_description: The story of a guy who reversed his type-2 diabetes.
 
 gems: [jekyll-paginate, jekyll-gist, jekyll-sitemap]
 
+collections:
+  - recipes
+  - bestfoods
+  - worstfoods
+
 paginate: 4
 
 paginate_limit: 4
