@@ -1,10 +1,9 @@
 ---
 layout: post
 title: "First pizza!"
-date: 2016-03-12 11:47:20
 description: ""
 thumbnail: first-pizza-post-fast.jpg
-alt: "Piza"
+alt: "Peters Yard charcuterie pizza"
 category: NewcastleVLCD
 tags:
   - diabetes
@@ -15,8 +14,6 @@ tags:
   - shake
 author: ian
 ---
-
-![Peters Yard charcuterie pizza](/assets/i/first-pizza-post-fast.jpg)
 
 First pizza!
 

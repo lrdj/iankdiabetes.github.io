@@ -3,6 +3,8 @@ layout: default
 description: This is Ian's blog. It's mostly random observations and stuff for his family
 ---
 
+<!-- title: Home -->
+
 <div class='divider xs-12 topBarTrigger'></div>
 
 <div class='post-wrap'>
@@ -12,16 +14,11 @@ description: This is Ian's blog. It's mostly random observations and stuff for h
     {% if page.next.url %}<a class="next" href="{{page.next.url}}">up next: {{page.next.title}}</a>{% endif %}
   </div>
 
+
   <h1>{{ page.title }}</h1>
   <p class='meta'>
     {{ page.author }} // {{ page.date | date_to_long_string }}
   </p>
-
-  {% if page.thumbnail %}
-  {% if page.thumbnail != 'defaultThumbnail.png' %}
-  <p><img src="{{ site.thumbURL }}{{ page.thumbnail }}" class="layout_image" alt="{{ page.alt }}" /></p>
-  {% endif %}
-  {% endif %}
 
   {{ content }}
 
@@ -49,4 +46,5 @@ s.setAttribute('data-timestamp', +new Date());
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
 
 {% endif %}
+
 

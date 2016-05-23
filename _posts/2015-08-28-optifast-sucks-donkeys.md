@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "Lost track of where I am with Optifasts"
-date: 2015-08-28 11:47:20
 description: ""
 thumbnail: 28August-optifast-chocolate.jpg
 alt: "Delicious (not) chocolate shake"
@@ -15,8 +14,6 @@ tags:
   - shake
 author: ian
 ---
-
-![{{post.alt}}}](/assets/i/28August-optifast-chocolate.jpg)
 
 Have now lost track of how long I've been dong these shakes...
 
