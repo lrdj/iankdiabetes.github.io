@@ -2,7 +2,7 @@
 layout: post
 title: "Not a bad backyard for a walk:-)"
 description: ""
-thumbnailinpost: yes
+thumbnailinpost: "yes"
 thumbnail: Ashfield-snowscape-2016-01-15.jpg
 alt: "Ashfield in the snow"
 category: NewcastleVLCD
