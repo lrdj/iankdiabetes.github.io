@@ -2,6 +2,7 @@
 layout: post
 title: "Lost track of where I am with Optifasts"
 description: ""
+thumbnailinpost: yes
 thumbnail: 28August-optifast-chocolate.jpg
 alt: "Delicious (not) chocolate shake"
 category: NewcastleVLCD

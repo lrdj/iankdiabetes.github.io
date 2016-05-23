@@ -17,10 +17,8 @@ description: This is Ian's blog. It's mostly random observations and stuff for h
     {{ page.author }} // {{ page.date | date_to_long_string }}
   </p>
 
-  {% if page.thumbnail %}
-  {% if page.thumbnail != 'defaultThumbnail.png' %}
+  {% if page.thumbnailinpost = 'yes' %}
   <p><img src="{{ site.thumbURL }}{{ page.thumbnail }}" class="layout_image" alt="{{ page.alt }}" /></p>
-  {% endif %}
   {% endif %}
 
   {{ content }}

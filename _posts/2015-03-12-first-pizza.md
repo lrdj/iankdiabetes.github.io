@@ -2,6 +2,7 @@
 layout: post
 title: "First pizza!"
 description: ""
+thumbnailinpost: yes
 thumbnail: first-pizza-post-fast.jpg
 alt: "Peters Yard charcuterie pizza"
 category: NewcastleVLCD

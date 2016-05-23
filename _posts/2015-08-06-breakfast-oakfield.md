@@ -2,6 +2,7 @@
 layout: post
 title: "Salad for breakfast - again"
 description: ""
+thumbnailinpost: yes
 thumbnail: breakfast-oakfield.jpg
 alt: "Delicious (not) chocolate shake"
 category: NewcastleVLCD
