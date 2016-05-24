@@ -1,5 +1,6 @@
 ---
 layout: page
+show: "true"
 title: "My top-5 blood-sugar-lowering foods"
 ---
 
@@ -16,3 +17,7 @@ title: "My top-5 blood-sugar-lowering foods"
 
 <p style="clear: both;">&nbsp;</p>
 
+<!--
+thumbnail: breakfast-oakfield.jpg
+alt: "Delicious (not) chocolate shake"
+-->

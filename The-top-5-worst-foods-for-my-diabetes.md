@@ -1,24 +1,19 @@
 ---
 layout: page
-title: Archives
-description: The archives list all posts or links to posts by category, tag, date and author
+show: "true"
+title: "The top-5 worst foods for my diabetes"
 ---
 
-<h1>Archives</h1>
+# The foods I avoid: These will spike your plasma glucose and lay on fat like nobody's business!
 
-<ul style="list-style:none;padding-left:0;width:98%">
-{% for post in site.posts limit:50 %}
-  <li style="width:98%"><a class='post-title' href='{{ post.url }}'>{{ post.title }}</a><span style="display: inline-block;float: right;">// {{ post.date | date_to_long_string }} / by {{ post.author }}</span></li>
-{% endfor %}
-</ul>
+{% assign foods = site.worstfoods | sort: 'Top5' %}
+{% for food in foods %}
 
-<ul style="list-style:none;margin:2em 0 2em 0;padding-left:0;">
-{% for post in site.posts offset:50 %}
-  <li style="float:left;padding:0 1em 0 0;"><a class='post-title' href='{{ post.url }}'>{{ post.title | truncatewords: 6}}</a></li>
+## {{ food.Name }} (rated {{ food.Top5 }} in my top-5 worst foods)  
+
+{{ food.Why }}
+
 {% endfor %}
-</ul>
 
 <p style="clear: both;">&nbsp;</p>
-
-
 

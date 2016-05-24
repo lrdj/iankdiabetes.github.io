@@ -18,6 +18,14 @@ description: The archives list all posts or links to posts by category, tag, dat
 {% endfor %}
 </ul>
 
+<ul style="list-style:none;padding-left:0;width:98%">
+{% for page in site.pages %}
+{% if page.show == 'true' %}
+  <li style="width:98%"><a class='post-title' href='{{ page.url }}'>{{ page.title }}</a></li>
+{% endif %}
+{% endfor %}
+</ul>
+
 <p style="clear: both;">&nbsp;</p>
 
 
