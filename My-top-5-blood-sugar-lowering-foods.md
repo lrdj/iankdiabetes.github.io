@@ -3,15 +3,16 @@ layout: page
 title: "My top-5 blood-sugar-lowering foods"
 ---
 
-<h1>Foods that will help you lower your plasma glucose</h1>
+# Foods that will help you lower your plasma glucose
 
-<ul style="list-style:none;padding-left:0;width:98%">
-{% for bestfood in site.bestfoods %}
-  <li style="width:98%"><a class='bestfood-title' href='#'>{{ bestfood.name }}</a><span style="display: inline-block;float: right;">// {{ bestfood.why }} / rated {{ bestfood.top5 }} in the Top-5</span></li>
+{% assign foods = site.bestfoods | sort: 'Top5' %}
+{% for food in foods %}
+
+## {{ food.Name }} (rated {{ food.Top5 }} in my top-5)  
+
+{{ food.Why }}
+
 {% endfor %}
-</ul>
 
 <p style="clear: both;">&nbsp;</p>
-
-
 
