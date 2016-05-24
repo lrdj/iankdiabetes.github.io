@@ -1,11 +1,35 @@
 ---
 layout: page
 title: Search
-description: This is ian's blog. It's mostly random observations and stuff for his family
+description: Find the content you need.
 ---
+<h1>Search for stuff you need:-)</h1>
 <p>
-Client-side search using <a href="http://lunrjs.com/">Lunr</a>. Type in the box to trigger results. To keep the index a reasonable size this only searches relatively recent posts. If you want to search everything for the last 15 years(?!?) you need to go to the <a href="/search/archival/">archival search</a> and be patient as the index is almost 2Mb.</p>
+Type in the box to trigger results.</p>
 
-<input placeholder="Search&hellip;" type="search" id="search" class="search-input">
+<!-- small index (recent posts) preload search strings -->
+
+{% include presearch.html %}
+
+<div id="searchArea" style="background:#eee;border-radius:6px;padding:1em;">
+
+  <p>
+  It looks like recently people have been searching for the following terms (click on these to show results): 
+  <a href="#" onclick="preLoadSearch('diabetes');">diabetes</a>; 
+  <a href="#" onclick="preLoadSearch('cure');">cure</a>; 
+  <a href="#" onclick="preLoadSearch('carbs');">carbs</a>; 
+  <a href="#" onclick="preLoadSearch('sugar');">sugar</a>; 
+  <a href="#" onclick="preLoadSearch('glucose');">glucose</a>; 
+  <a href="#" onclick="preLoadSearch('blood');">blood</a>; 
+  <a href="#" onclick="preLoadSearch('reversal');">reversal</a>; 
+  <a href="#" onclick="preLoadSearch('insulin');">insulin</a>; 
+  <a href="#" onclick="preLoadSearch('pancreas');">pancreas</a>; 
+  <a href="#" onclick="preLoadSearch('metformin');">metformin</a>.</p>
+  <p>
+  Or use the search box:<br />
+  <input placeholder="Search&hellip;" type="search" id="search" class="search-input"></p>
+
+</div>
+
 <div id="results" class="all-posts results"></div>
 
