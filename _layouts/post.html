@@ -25,26 +25,6 @@ description: This is Ian's blog. It's mostly random observations and stuff for h
 
 </div>
 
-{% if site.disqus_shortname %}
-  <div id="disqus_thread"></div>
-  <script type="text/javascript">
+{% include disqus.html %}
 
-    var disqus_config = function () {
-      this.page.url = 'http://thethingthatiwant.com' + '{{ page.url }}' + '#disqus_thread';
-      this.page.identifier = '{{ page.id }}'; 
-      this.page.title = '{{ page.title }}'; 
-    };
-
-(function() { // DON'T EDIT BELOW THIS LINE
-var d = document, s = d.createElement('script');
-
-s.src = '//reversemydiabetes.disqus.com/embed.js';
-
-s.setAttribute('data-timestamp', +new Date());
-(d.head || d.body).appendChild(s);
-})();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
-
-{% endif %}
 
